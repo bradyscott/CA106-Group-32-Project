@@ -1,0 +1,30 @@
+header {
+    background-image: url("../img/iceland-header-bg.jpg");
+    background-color: #143851;
+    padding-top: 50px;
+    margin-bottom: 0;
+    /* This ensures that the header element will always be at least 600 pixels high. */
+    min-height: 600px;
+    /* This stops the background from repeating, i.e. displaying the same image multiple times to fill up the available space. */
+    background-repeat: no-repeat;
+    /* This stretches out the background image so that it fills up the entire space. */
+    background-size: cover;
+    /* This places the background image in the centre of the header section */
+    background-position: center;
+}
+
+.header-content img {
+    /* This enables the profile picture to be positioned above the name h1, instead of beside it. */
+    display: block;
+    /* This makes the image appear circular by setting the radius of each of its corners equal to half of the length of each side. */
+    border-radius: 50%;
+    /* The below two lines ensure the image always stays in the centre. */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.4), 0 12px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+header p, h1 {
+    text-align: center;
+    color: white;
+}

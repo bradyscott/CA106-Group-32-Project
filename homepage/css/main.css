@@ -1,0 +1,50 @@
+* {
+    /* Setting the box sizing as below includes any padding or margins when calculating the height of an element. */
+    box-sizing: border-box;
+}
+
+body {
+    /* This ensures that the body of the webpage sticks tightly to the top, left, bottom and right of the browser window. */
+    margin: 0 0 0 0;
+}
+
+.main-nav {
+    text-align: center;
+    /* The below two lines make the navbar stay at the top of the page when you scroll down so you always have easy access to it without needing to scroll back to the top. */
+    /* We used some information from https://www.w3schools.com/css/css_navbar_horizontal.asp to style the navbar */
+    position: -webkit-sticky;
+    position: sticky;
+    /* This ensures there is no space between the navbar and what is above it, eg the header or the top of the browser window */
+    top: 0;
+    /* This creates two  drop shadow effects at the bottom of the navbar. They are black with 20% opacity. In this case, I have chosen a shadow that extends down 4px and has a blur effect, and another than extends down 6px with a stronger blur effect. */
+    /* We got information on shadows from https://www.w3schools.com/css/css3_shadows_box.asp */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.main-nav li {
+    /* This makes each of the list elements display on the same line, rather than each being on a separate line. */
+    display: inline;
+}
+
+.main-nav li a {
+    /* This makes the navigation links display on the same line, but also enabled their height to be changed */
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.main-nav li a:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #363738;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 22px 0 rgba(0, 0, 0, 0.5);
+}
