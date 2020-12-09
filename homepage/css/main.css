@@ -25,7 +25,9 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: rgba(20,20,20,0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
 }
 
 .main-nav li {
@@ -38,13 +40,15 @@ body {
     display: inline-block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 22px 40px;
     text-decoration: none;
 }
 
 .main-nav li a:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    background-color: #363738;
-    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 22px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(20,20,20,0.7);
+    box-shadow: 0 8px 10px 0 rgba(20, 20, 20, 0.5), 0 10px 22px 0 rgba(20, 20, 20, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
 }
