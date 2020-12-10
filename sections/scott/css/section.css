@@ -3,8 +3,8 @@ header {
     background-color: #143851;
     margin-bottom: 0;
     /* This ensures that the header element will always be at least 600 pixels high. */
-    height: 50vh;
-    min-height: 400px;
+    height: 70vh;
+    min-height: 600px;
     /* This stops the background from repeating, i.e. displaying the same image multiple times to fill up the available space. */
     background-repeat: no-repeat;
     /* This stretches out the background image so that it fills up the entire space. */
@@ -31,9 +31,14 @@ header {
     box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.4), 0 12px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-header p, h1, h2 {
+header p, header h1, header h2 {
     text-align: center;
     color: white;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+header p {
+    font-size: 1.4em;
 }
 
 .section-nav {
@@ -54,9 +59,9 @@ header p, h1, h2 {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgba(20,20,20,0.3);
+    background-color: rgba(56, 149, 192, 0.8);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .section-nav li {
@@ -76,10 +81,22 @@ header p, h1, h2 {
 .section-nav li a:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    background-color: rgba(20,20,20,0.7);
+    background-color: rgba(20,20,20,0.3);
     box-shadow: 0 8px 10px 0 rgba(20, 20, 20, 0.5), 0 10px 22px 0 rgba(20, 20, 20, 0.5);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+
+@media screen and (max-width: 450px) {
+    .section-nav li a {
+        padding: 22px 12px;
+    }
+}
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table, th, td {
@@ -88,8 +105,12 @@ table, th, td {
 }
 
 th, td {
-    padding: 5px;
-    text-align: left;    
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #c2d6d6;
 }
 
 iframe {

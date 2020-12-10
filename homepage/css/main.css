@@ -6,6 +6,27 @@
 body {
     /* This ensures that the body of the webpage sticks tightly to the top, left, bottom and right of the browser window. */
     margin: 0 0 0 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1em
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+h2 {
+    font-size: 2.2em;
 }
 
 .main-nav {
@@ -51,4 +72,37 @@ body {
     box-shadow: 0 8px 10px 0 rgba(20, 20, 20, 0.5), 0 10px 22px 0 rgba(20, 20, 20, 0.5);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); 
+}
+
+/* @media screen and (max-width: 750px) {
+    .main-nav li a {
+        padding: 22px 10px;
+    }
+} */
+
+@media screen and (max-width: 450px) {
+    .main-nav li a {
+        padding: 22px 12px;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #062845;
+    color: #D6C3A0;
+}
+
+footer p {
+    padding: 20px;
+}
+
+footer a {
+    color: #D6C3A0;
+}
+
+footer a:hover {
+    color: #a5977d;
 }
