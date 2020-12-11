@@ -76,15 +76,22 @@ header p {
     text-align: center;
     padding: 22px 40px;
     text-decoration: none;
+    border-top: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
 }
 
 .section-nav li a:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    background-color: rgba(20,20,20,0.3);
+    border-bottom: 4px solid #37667C;
+    /* background-color: rgba(20,20,20,0.3);
     box-shadow: 0 8px 10px 0 rgba(20, 20, 20, 0.5), 0 10px 22px 0 rgba(20, 20, 20, 0.5);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
+}
+
+.active {
+    background-color: #37667C;
 }
 
 @media screen and (max-width: 450px) {
