@@ -1,4 +1,5 @@
 header {
+    /* Chooses a random backgroubd imamge for the header from Unsplash */
     background-image: url("https://source.unsplash.com/collection/1149295/1920x800");
 }
 
@@ -25,10 +26,41 @@ th {
 .google-map {
     text-align: center;
     margin: 0 auto;
-    width: 10%;
 }
 
 iframe {
     width: 100%;
 }
 
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+@media screen and (max-width: 450px) {
+    article img {
+        width: 100%;
+    }
+}
+
+figcaption {
+    color: #808080;
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+figcaption a {
+    color: #808080;
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+ol li {
+    font-weight: bold;
+}

@@ -96,15 +96,15 @@ h2 {
     /* We got information on shadows from https://www.w3schools.com/css/css3_shadows_box.asp */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 50px;
+    /* Ensures that the navbar always stays on top and that the audio elements on the langauge page do not appear on top of it. */
+    z-index: 1;
 }
 
 .section-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgba(56, 149, 192, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgb(56, 149, 192);
 }
 
 .section-nav li {
