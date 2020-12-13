@@ -10,7 +10,7 @@ body {
     font-size: 1.1em
 }
 
-section {
+.page-content-container {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 1200px;
@@ -61,10 +61,11 @@ h2 {
     display: inline-block;
     color: #ffffff;
     text-align: center;
-    padding: 22px 40px;
+    padding: 16px 40px;
     text-decoration: none;
     border-top: 4px solid rgba(0, 0, 0, 0);
     border-bottom: 4px solid rgba(0, 0, 0, 0);
+    text-transform: uppercase;
 }
 
 .main-nav li a:hover {
@@ -85,7 +86,7 @@ h2 {
 
 @media screen and (max-width: 450px) {
     .main-nav li a {
-        padding: 22px 12px;
+        padding: 6px 12px;
     }
 }
 

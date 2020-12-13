@@ -1,8 +1,8 @@
 header {
-    background-image: url("../img/iceland-header-bg.jpg");
+    background-image: url("https://source.unsplash.com/collection/1149295/1920x800");
     background-color: #143851;
     margin-bottom: 0;
-    /* This ensures that the header element will always be at least 600 pixels high. */
+    /* This ensures that the header element will be 70% of the window height, but will always be at least 600 pixels high. */
     height: 70vh;
     min-height: 600px;
     /* This stops the background from repeating, i.e. displaying the same image multiple times to fill up the available space. */
@@ -74,7 +74,7 @@ header p {
     display: inline-block;
     color: #ffffff;
     text-align: center;
-    padding: 22px 40px;
+    padding: 12px 40px;
     text-decoration: none;
     border-top: 4px solid rgba(0, 0, 0, 0);
     border-bottom: 4px solid rgba(0, 0, 0, 0);
@@ -83,20 +83,17 @@ header p {
 .section-nav li a:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    border-bottom: 4px solid #37667C;
-    /* background-color: rgba(20,20,20,0.3);
-    box-shadow: 0 8px 10px 0 rgba(20, 20, 20, 0.5), 0 10px 22px 0 rgba(20, 20, 20, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); */
+    border-bottom: 4px solid tomato;
 }
 
 .active {
     background-color: #37667C;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 450px) {
     .section-nav li a {
-        padding: 22px 12px;
+        padding: 6px 12px;
     }
 }
 
@@ -120,8 +117,12 @@ th {
     background-color: #c2d6d6;
 }
 
+.google-map {
+    text-align: center;
+    margin: 0 auto;
+    width: 10%;
+}
+
 iframe {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw
+    width: 100%;
 }
