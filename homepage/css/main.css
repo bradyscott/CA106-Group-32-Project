@@ -25,11 +25,13 @@ h1, h2, h3 {
 h1 {
     font-size: 2.8em;
 }
+
 h2 {
     font-size: 2.2em;
 }
 
 /* This is the navbar with the different countries eg Home France Iceland etc. */
+
 .main-nav {
     text-align: center;
     /* The below two lines make the navbar stay at the top of the page when you scroll down so you always have easy access to it without needing to scroll back to the top. */
@@ -47,9 +49,23 @@ h2 {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: rgba(20,20,20,0.3);
+    background-color: rgba(20, 20, 20, 0.3);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* This changes the top navbar colour to black if the browser is Firefox, as it does not have proper support for the blurred version. This CSS was obtained from https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/ */
+
+@-moz-document url-prefix() {
+    .main-nav ul {
+        background-color: black;
+    }
+}
+
+/* This changes the top navbar colour to black if the browser is Internet Explorer, as it does not have proper support for the blurred version. This CSS was obtained from https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/ */
+
+_:-ms-fullscreen, :root .main-nav ul {
+    background-color: black;
 }
 
 .main-nav li {
@@ -85,6 +101,7 @@ h2 {
 }
 
 /* This is the Navbar within each country's section, eg Basic Info Geography History etc. */
+
 .section-nav {
     text-align: center;
     /* The below three lines make the navbar stay at the top of the page when you scroll down so you always have easy access to it without needing to scroll back to the top. */
