@@ -200,6 +200,11 @@ header p {
     font-size: 1.4em;
 }
 
+audio {
+    /* This removes the outline box that certain browsers add around the audio player. */
+    outline: none;
+}
+
 footer {
     margin-top: 20px;
     width: 100%;
@@ -214,11 +219,9 @@ footer p {
 }
 
 footer a {
-    text-decoration: none;
     color: #ffffff;
 }
 
 footer a:hover {
     color: #808080;
-    text-decoration: underline;
 }
