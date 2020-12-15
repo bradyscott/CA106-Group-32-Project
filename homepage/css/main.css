@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+header {
+    background-image: url("../img/header-bg.jpg");
+}
+
 body {
     /* This ensures that the body of the webpage sticks tightly to the top, left, bottom and right of the browser window. */
     margin: 0 0 0 0;
@@ -156,6 +160,7 @@ _:-ms-fullscreen, :root .main-nav ul {
     .main-nav li a, .section-nav li a {
         padding: 6px 12px;
     }
+
 }
 
 header {
@@ -172,7 +177,7 @@ header {
     background-position: center;
 }
 
-.header-content {
+.header-content{
     padding-top: 50px;
 }
 
@@ -203,6 +208,42 @@ header p {
 audio {
     /* This removes the outline box that certain browsers add around the audio player. */
     outline: none;
+}
+
+.row {
+    margin: 8px -16px;
+    text-align: center;
+}
+
+/* This prevents any elements after the row from floating */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-small {
+    float: left;
+    width: 50%;
+    padding: 8px;
+}
+
+.content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.content img {
+    width: 30%;
+}
+
+button.more {
+    height: 44px;
+    width: 50%;
+    min-width: 120px;
+    background-color: red;
 }
 
 footer {
