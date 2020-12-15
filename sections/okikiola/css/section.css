@@ -1,0 +1,118 @@
+header {
+    /* Chooses a random background image for the header from Unsplash */
+    background-image: url("https://source.unsplash.com/collection/1149295/1920x800");
+}
+
+.section-nav ul {
+    background-color: #153991;
+}
+
+.section-nav li a:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-bottom: 4px solid #C43A32;
+}
+
+.active {
+    background-color: #2EA0D3;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #c2d6d6;
+}
+
+.google-map {
+    text-align: center;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+@media screen and (max-width: 450px) {
+    article img {
+        width: 100%;
+    }
+}
+
+figcaption {
+    color: #808080;
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+figcaption a {
+    color: #808080;
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+ol li {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+p.pronounciation {
+    font-style: italic;
+}
+
+hr.list {
+    margin-left: -20px;
+}
+
+hr {
+    /* This tells the browser to make the line 90% of the width of the viewport. */
+    max-width: 100%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    /* This sets the background image of the line to a gradient. It starts off on the left as a light-grey colour, becomes darker towards the middle and then ends at the right as the original light-grey colour. */
+    /* I used https://css-tricks.com/examples/hrs/ to obtain sample CSS to create the HRs in this way. */
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: #153991;
+    color: #ffffff
+}
+
+/* footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #808080;
+    text-decoration: underline;
+} */
