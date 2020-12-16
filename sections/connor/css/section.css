@@ -1,0 +1,80 @@
+header {
+    /* Chooses a random background image for the header from Unsplash */
+    background-image: url("https://source.unsplash.com/collection/974437/1920x800");
+}
+
+.section-nav ul {
+    background-color: #B42929;
+}
+
+.section-nav li a:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-bottom: 4px solid #ffc400;
+}
+
+.active {
+    background-color:#cf503f;
+    font-weight: bold;
+}
+
+th {
+    background-color: #ffc400;
+}
+
+article img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+@media screen and (max-width: 450px) {
+    article img {
+        width: 100%;
+    }
+}
+
+figcaption {
+    color: #808080;
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+figcaption a {
+    color: #808080;
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+ol li {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+p.pronounciation {
+    font-style: italic;
+}
+
+hr.list {
+    margin-left: -20px;
+}
+
+footer {
+    background-color: #B42929;
+    color: #ffffff
+}
+
+/* footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #808080;
+    text-decoration: underline;
+} */
