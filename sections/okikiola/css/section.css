@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header {
     /* Chooses a random background image for the header from Unsplash */
     background-image: url("https://source.unsplash.com/collection/1149295/1920x800");
@@ -26,15 +27,42 @@ table {
 
 table, th, td {
     border: 1px solid black;
+=======
+/* table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+} */
+
+header {
+     /* Chooses a random background image for the header from Unsplash */
+     background-image: url("https://source.unsplash.com/collection/93773/1920x800");
+}
+
+table, th, td {
+    border: 1px solid black; 
+>>>>>>> 76c9baefcaf0e3a5bab456e954361dff8d72c616
     border-collapse: collapse;
 }
 
 th, td {
+<<<<<<< HEAD
     padding: 15px;
+=======
+    padding: 5px; 
+>>>>>>> 76c9baefcaf0e3a5bab456e954361dff8d72c616
     text-align: left;
 }
 
 th {
+<<<<<<< HEAD
     background-color: #c2d6d6;
 }
 
@@ -116,3 +144,27 @@ footer a:hover {
     color: #808080;
     text-decoration: underline;
 } */
+=======
+    background-color: #95cc88;
+}
+
+.section-nav ul {
+    background-color: #3E8456;
+}
+
+.section-nav li a:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-bottom: 4px solid #ffffff;
+}
+
+.active {
+    background-color: #95cc88;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #3E8456;
+    color: #ffffff
+}
+>>>>>>> 76c9baefcaf0e3a5bab456e954361dff8d72c616
