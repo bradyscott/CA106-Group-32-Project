@@ -27,6 +27,7 @@ footer {
     color: #000000
 }
 
+/* Sets the size of video and ensures aspect ration is 16:9, code from https://css-tricks.com/fluid-width-video/ */
 .videowrapper {
     position: relative;
     padding-bottom: 56.25%;
