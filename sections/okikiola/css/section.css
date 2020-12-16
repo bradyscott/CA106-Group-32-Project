@@ -1,295 +1,55 @@
-* {
-    /* Setting the box sizing as below includes any padding or margins when calculating the height of an element. */
-    box-sizing: border-box;
-}
-
-header {
-    background-image: url("../img/header-bg.jpg");
-}
-
-body {
-    /* This ensures that the body of the webpage sticks tightly to the top, left, bottom and right of the browser window. */
-    margin: 0 0 0 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.1em
-}
-
-.page-content-container {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
-    font-size: 2.8em;
-}
-
-h2 {
-    font-size: 2.2em;
-}
-
-/* This is the navbar with the different countries eg Home France Iceland etc. */
-
-.main-nav {
-    text-align: center;
-    /* The below two lines make the navbar stay at the top of the page when you scroll down so you always have easy access to it without needing to scroll back to the top. */
-    /* We used some information from https://www.w3schools.com/css/css_navbar_horizontal.asp to style the navbar */
-    position: -webkit-sticky;
-    position: sticky;
-    /* This ensures there is no space between the navbar and what is above it, eg the header or the top of the browser window */
-    top: 0;
-    /* This creates two  drop shadow effects at the bottom of the navbar. They are black with 20% opacity. In this case, I have chosen a shadow that extends down 4px and has a blur effect, and another than extends down 6px with a stronger blur effect. */
-    /* We got information on shadows from https://www.w3schools.com/css/css3_shadows_box.asp */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.main-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgba(20, 20, 20, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-
-/* This changes the top navbar colour to black if the browser is Firefox, as it does not have proper support for the blurred version. This CSS was obtained from https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/ */
-
-@-moz-document url-prefix() {
-    .main-nav ul {
-        background-color: black;
-    }
-}
-
-/* This changes the top navbar colour to black if the browser is Internet Explorer, as it does not have proper support for the blurred version. This CSS was obtained from https://www.ryadel.com/en/css3-media-query-target-only-ie-ie6-ie11-firefox-chrome-safari-edge/ */
-
-_:-ms-fullscreen, :root .main-nav ul {
-    background-color: black;
-}
-
-.main-nav li {
-    /* This makes each of the list elements display on the same line, rather than each being on a separate line. */
-    display: inline;
-}
-
-.main-nav li a {
-    /* This makes the navigation links display on the same line, but also enabled their height to be changed */
-    display: inline-block;
-    color: #ffffff;
-    text-align: center;
-    padding: 16px 40px;
-    text-decoration: none;
-    border-top: 4px solid rgba(0, 0, 0, 0);
-    border-bottom: 4px solid rgba(0, 0, 0, 0);
-    text-transform: uppercase;
-}
-
-.main-nav li a:hover {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    border-bottom: 4px solid tomato;
-    /* background-color: rgba(20,20,20,0.7);
-    box-shadow: 0 8px 10px 0 rgba(20, 20, 20, 0.5), 0 10px 22px 0 rgba(20, 20, 20, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);  */
-}
-
-.main-nav .active {
-    background-color: #37667C;
-    font-weight: bold;
-}
-
-
-/* This is the Navbar within each country's section, eg Basic Info Geography History etc. */
-
-.section-nav {
-    text-align: center;
-    /* The below three lines make the navbar stay at the top of the page when you scroll down so you always have easy access to it without needing to scroll back to the top. */
-    /* We used some information from https://www.w3schools.com/css/css_navbar_horizontal.asp to style the navbar */
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    /* This creates two  drop shadow effects at the bottom of the navbar. They are black with 20% opacity. In this case, I have chosen a shadow that extends down 4px and has a blur effect, and another than extends down 6px with a stronger blur effect. */
-    /* We got information on shadows from https://www.w3schools.com/css/css3_shadows_box.asp */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 50px;
-    /* Ensures that the navbar always stays on top and that the audio elements on the langauge page do not appear on top of it. */
-    z-index: 1;
-}
-
-.section-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /* background-color: rgb(56, 149, 192); */
-}
-
-.section-nav li {
-    /* This makes each of the list elements display on the same line, rather than each being on a separate line. */
-    display: inline;
-}
-
-.section-nav li a {
-    /* This makes the navigation links display on the same line, but also enabled their height to be changed */
-    display: inline-block;
-    color: #ffffff;
-    text-align: center;
-    padding: 12px 40px;
-    text-decoration: none;
-    border-top: 4px solid rgba(0, 0, 0, 0);
-    border-bottom: 4px solid rgba(0, 0, 0, 0);
-}
-
-@media screen and (max-width: 450px) {
-    .main-nav li a, .section-nav li a {
-        padding: 6px 12px;
-    }
-
-}
-
-header {
-    background-color: #143851;
-    margin-bottom: 0;
-    /* This ensures that the header element will be 70% of the window height, but will always be at least 600 pixels high. */
-    height: 70vh;
-    min-height: 600px;
-    /* This stops the background from repeating, i.e. displaying the same image multiple times to fill up the available space. */
-    background-repeat: no-repeat;
-    /* This stretches out the background image so that it fills up the entire space. */
-    background-size: cover;
-    /* This places the background image in the centre of the header section */
-    background-position: center;
-}
-
-.header-content{
-    padding-top: 50px;
-}
-
-.header-content img {
-    /* This enables the profile picture to be positioned above the name h1, instead of beside it. */
-    display: block;
-    /* This makes the image appear circular by setting the radius of each of its corners equal to half of the length of each side. */
-    border-radius: 50%;
-    /* The below two lines ensure the image always stays in the centre. */
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 20vw;
-    max-width: 250px;
-    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.4), 0 12px 20px 0 rgba(0, 0, 0, 0.4);
-}
-
-header p, header h1, header h2 {
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 8px #000000;
-}
-
-header p {
-    font-size: 1.4em;
-}
-
-audio {
-    /* This removes the outline box that certain browsers add around the audio player. */
-    outline: none;
-}
-
-.google-map {
-    width: 100%;
-}
-
-hr {
-    /* This tells the browser to make the line 90% of the width of the viewport. */
-    max-width: 100%;
-    border: 0;
-    height: 1px;
-    background: #333;
-    /* This sets the background image of the line to a gradient. It starts off on the left as a light-grey colour, becomes darker towards the middle and then ends at the right as the original light-grey colour. */
-    /* I used https://css-tricks.com/examples/hrs/ to obtain sample CSS to create the HRs in this way. */
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-table {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-table, th, td {
+/* table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-th, td {
-    padding: 15px;
+th,
+td {
+    padding: 5px;
     text-align: left;
+} */
+
+header {
+    /* Chooses a random background image for the header from Unsplash */
+    background-image: url("https://source.unsplash.com/collection/93773/1920x800");
 }
 
-.row {
-    margin: 8px -16px;
-    text-align: center;
+th {
+    background-color: #95cc88;
 }
 
-/* This prevents any elements after the row from floating */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.section-nav ul {
+    background-color: #3E8456;
 }
 
-.column-small {
-    float: left;
-    width: 50%;
-    padding: 8px;
+.section-nav li a:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-bottom: 4px solid #ffffff;
 }
 
-.content {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 12px;
-}
-
-.content img {
-    width: 30%;
-}
-
-button.more {
-    height: 44px;
-    width: 50%;
-    min-width: 120px;
-    background-color: red;
-}
-
-img {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.active {
+    background-color: #95cc88;
+    font-weight: bold;
 }
 
 footer {
-    margin-top: 20px;
-    width: 100%;
+    background-color: #3E8456;
+    color: #ffffff
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videowrapper iframe {
     position: absolute;
-    text-align: center;
-    background-color: #062845;
-    color: #D6C3A0;
-}
-
-footer p {
-    padding: 20px;
-}
-
-footer a {
-    color: #ffffff;
-}
-
-footer a:hover {
-    color: #808080;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

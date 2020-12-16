@@ -265,20 +265,7 @@ button.more {
     height: 44px;
     width: 50%;
     min-width: 120px;
-    color: #ffffff;
-    background-color: blue;
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-button.more:hover {
-    cursor: pointer;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: red;
 }
 
 img {
