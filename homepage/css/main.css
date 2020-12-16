@@ -210,6 +210,22 @@ audio {
     width: 100%;
 }
 
+/* Sets the size of video and ensures aspect ration is 16:9, code from https://css-tricks.com/fluid-width-video/ */
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 hr {
     /* This tells the browser to make the line 90% of the width of the viewport. */
     max-width: 100%;
@@ -221,6 +237,10 @@ hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
     margin-top: 60px;
     margin-bottom: 60px;
+}
+/* This is used on the language page so that the HR lines up with the list numbers. */
+hr.list {
+    margin-left: -20px;
 }
 
 table {
