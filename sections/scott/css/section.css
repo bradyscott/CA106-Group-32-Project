@@ -22,13 +22,6 @@ th {
     background-color: #c2d6d6;
 }
 
-.google-map {
-    text-align: center;
-    margin: 0 auto;
-}
-
-
-
 article img {
     display: block;
     margin-left: auto;
@@ -69,19 +62,6 @@ p.pronounciation {
 
 hr.list {
     margin-left: -20px;
-}
-
-hr {
-    /* This tells the browser to make the line 90% of the width of the viewport. */
-    max-width: 100%;
-    border: 0;
-    height: 1px;
-    background: #333;
-    /* This sets the background image of the line to a gradient. It starts off on the left as a light-grey colour, becomes darker towards the middle and then ends at the right as the original light-grey colour. */
-    /* I used https://css-tricks.com/examples/hrs/ to obtain sample CSS to create the HRs in this way. */
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
-    margin-top: 60px;
-    margin-bottom: 60px;
 }
 
 footer {
