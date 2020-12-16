@@ -145,18 +145,6 @@ _:-ms-fullscreen, :root .main-nav ul {
     border-bottom: 4px solid rgba(0, 0, 0, 0);
 }
 
-/* .section-nav li a:hover {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    border-bottom: 4px solid tomato;
-} */
-
-/* @media screen and (max-width: 750px) {
-    .main-nav li a {
-        padding: 22px 10px;
-    }
-} */
-
 @media screen and (max-width: 450px) {
     .main-nav li a, .section-nav li a {
         padding: 6px 12px;
@@ -211,8 +199,21 @@ audio {
     outline: none;
 }
 
-iframe {
+.google-map {
     width: 100%;
+}
+
+hr {
+    /* This tells the browser to make the line 90% of the width of the viewport. */
+    max-width: 100%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    /* This sets the background image of the line to a gradient. It starts off on the left as a light-grey colour, becomes darker towards the middle and then ends at the right as the original light-grey colour. */
+    /* I used https://css-tricks.com/examples/hrs/ to obtain sample CSS to create the HRs in this way. */
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 table {
@@ -237,14 +238,13 @@ th, td {
 }
 
 /* This prevents any elements after the row from floating */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-.column-small {
+.column {
     float: left;
     width: 50%;
     padding: 8px;
@@ -257,14 +257,34 @@ th, td {
 }
 
 .content img {
-    width: 30%;
+    width: 40%;
+    padding-top: 25px;
 }
 
 button.more {
     height: 44px;
     width: 50%;
     min-width: 120px;
-    background-color: red;
+    color: #ffffff;
+    background-color: blue;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+button.more:hover {
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {

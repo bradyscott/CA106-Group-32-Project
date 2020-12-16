@@ -42,6 +42,7 @@ td {
 } */
 
 header {
+<<<<<<< HEAD
      /* Chooses a random background image for the header from Unsplash */
      background-image: url("https://source.unsplash.com/collection/93773/1920x800");
 }
@@ -59,6 +60,10 @@ th, td {
     padding: 5px; 
 >>>>>>> 76c9baefcaf0e3a5bab456e954361dff8d72c616
     text-align: left;
+=======
+    /* Chooses a random background image for the header from Unsplash */
+    background-image: url("https://source.unsplash.com/collection/93773/1920x800");
+>>>>>>> f7b7acf53ef7125dd1465cc1cd3a7d1158b4080a
 }
 
 th {
@@ -167,4 +172,21 @@ footer {
     background-color: #3E8456;
     color: #ffffff
 }
+<<<<<<< HEAD
 >>>>>>> 76c9baefcaf0e3a5bab456e954361dff8d72c616
+=======
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+>>>>>>> f7b7acf53ef7125dd1465cc1cd3a7d1158b4080a
