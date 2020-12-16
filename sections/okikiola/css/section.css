@@ -63,3 +63,5 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
+  /* An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active. */
+  
