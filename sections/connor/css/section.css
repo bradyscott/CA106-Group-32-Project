@@ -4,7 +4,7 @@ header {
 }
 
 .section-nav ul {
-    background-color: #B42929;
+    background-color: #c60b1e;
 }
 
 .section-nav li a:hover {
@@ -14,7 +14,7 @@ header {
 }
 
 .active {
-    background-color:#cf503f;
+    background-color:#c60b1e;
     font-weight: bold;
 }
 
