@@ -36,6 +36,7 @@ h2 {
 }
 
 /* Makes the author names on main homepage display closer to the country name. */
+
 h5.author {
     margin-top: -25px;
     font-weight: normal;
@@ -49,7 +50,7 @@ h5.author {
     text-align: center;
     /* The below two lines make the navbar stay at the top of the page when you scroll down so you always have easy access to it without needing to scroll back to the top. */
     /* We used some information from https://www.w3schools.com/css/css_navbar_horizontal.asp to style the navbar */
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
     position: sticky;
     /* This ensures there is no space between the navbar and what is above it, eg the header or the top of the browser window */
     top: 0;
@@ -113,7 +114,6 @@ _:-ms-fullscreen, :root .main-nav ul {
     font-weight: bold;
 }
 
-
 /* This is the Navbar within each country's section, eg Basic Info Geography History etc. */
 
 .section-nav {
@@ -155,6 +155,7 @@ _:-ms-fullscreen, :root .main-nav ul {
 }
 
 /* Addes some spacing between the header and the country tiles on the main homepage */
+
 .gridview {
     margin-top: 30px;
 }
@@ -173,7 +174,7 @@ header {
     background-position: center;
 }
 
-.header-content{
+.header-content {
     padding-top: 50px;
 }
 
@@ -238,7 +239,9 @@ hr {
     margin-top: 60px;
     margin-bottom: 60px;
 }
+
 /* This is used on the language page so that the HR lines up with the list numbers. */
+
 hr.list {
     margin-left: -20px;
 }
@@ -266,7 +269,8 @@ th, td {
 }
 
 /* This prevents any elements after the row from floating */
-.row:after {
+
+.row::after {
     content: "";
     display: table;
     clear: both;
@@ -357,5 +361,4 @@ footer a:hover {
     .column {
         width: 100%;
     }
-
 }
