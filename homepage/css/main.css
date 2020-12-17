@@ -300,9 +300,7 @@ th, td {
     padding-right: 20px;
 }
 
-.home-button {
-    background-color: #f44336;
-    color: white;
+.home-button, #contact input[type=submit] {
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -318,9 +316,10 @@ th, td {
     margin-bottom: 20px;
     transition: 0.25s;
     transform: scale(1);
+    border: none;
 }
 
-.home-button:hover {
+.home-button:hover, #contact input[type=submit]:hover {
     transition: 0.25s;
     /* make button grow larger when hovered over, got information from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
     transform: scale(1.05);
@@ -363,4 +362,70 @@ footer a:hover {
     .column {
         width: 100%;
     }
+}
+
+/*  information on styling the text fields from https://www.w3schools.com/css/css_form.asp */
+
+.button {
+    text-align: center;
+}
+
+#contact input {
+    /* This prevents the standard style for input elements overriding custom styles. */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#contact input[type="text"], input[type="email"], input[type="tel"] {
+    background-color: inherit;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    /* This stops the browser placing a blue outline around the input field. */
+    outline: none;
+    border-bottom: 2px solid #062845;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8em;
+}
+
+#contact input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover {
+    /* This animates the changing of the background from white to light grey. */
+    /* I got information about adding the animation from https://www.w3schools.com/cssref/css3_pr_transition.asp */
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #e6e6e6;
+}
+
+#contact input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    /* This animates the changing of the background from white to light grey. */
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #e6e6e6;
+    border-bottom: 2px solid red;
+}
+
+#contact textarea {
+    padding: 12px;
+    width: 100%;
+    background-color: inherit;
+    border: 2px solid #062845;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8em;
+}
+
+#contact textarea:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #e6e6e6;
+}
+
+#contact textarea:focus {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: white;
+    border: 2px solid red;
 }
