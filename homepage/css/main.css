@@ -154,7 +154,7 @@ _:-ms-fullscreen, :root .main-nav ul {
     border-bottom: 4px solid rgba(0, 0, 0, 0);
 }
 
-/* Addes some spacing between the header and the country tiles on the main homepage */
+/* Adds some spacing between the header and the country tiles on the main homepage */
 
 .gridview {
     margin-top: 30px;
@@ -299,7 +299,7 @@ th, td {
     padding-right: 20px;
 }
 
-button.more {
+.home-button {
     height: 46px;
     width: 50%;
     min-width: 120px;
@@ -317,7 +317,7 @@ button.more {
     outline: none;
 }
 
-button.more:hover {
+.home-button:hover {
     -webkit-transition: 0.5s;
     transition: 0.25s;
     /* make button grow larger when hovered over, got information from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
