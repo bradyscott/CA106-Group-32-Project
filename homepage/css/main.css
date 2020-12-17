@@ -57,6 +57,7 @@ h5.author {
     /* This creates two  drop shadow effects at the bottom of the navbar. They are black with 20% opacity. In this case, I have chosen a shadow that extends down 4px and has a blur effect, and another than extends down 6px with a stronger blur effect. */
     /* We got information on shadows from https://www.w3schools.com/css/css3_shadows_box.asp */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .main-nav ul {
@@ -300,25 +301,26 @@ th, td {
 }
 
 .home-button {
-    height: 46px;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
     width: 50%;
     min-width: 120px;
     font-size: 1em;
     background-color: #062845;
     color: #ffffff;
     font-family: "Nunito", sans-serif;
-    border: none;
     border-radius: 8px;
     margin-top: 10px;
     margin-bottom: 20px;
-    -webkit-transition: 0.5s;
     transition: 0.25s;
     transform: scale(1);
-    outline: none;
 }
 
 .home-button:hover {
-    -webkit-transition: 0.5s;
     transition: 0.25s;
     /* make button grow larger when hovered over, got information from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
     transform: scale(1.05);
