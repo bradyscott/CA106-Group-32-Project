@@ -1,25 +1,25 @@
 header {
     /* Chooses a random background image for the header from Unsplash */
-    background-image: url("https://source.unsplash.com/collection/1149295/1920x800");
+    background-image: url("https://source.unsplash.com/collection/1146811/1920x800");
 }
 
 .section-nav ul {
-    background-color: #153991;
+    background-color: #002395;
 }
 
 .section-nav li a:hover {
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    border-bottom: 4px solid #C43A32;
+    border-bottom: 4px solid #ED2939;
 }
 
 .active {
-    background-color: #2EA0D3;
+    background-color: #00aeff;
     font-weight: bold;
 }
 
 th {
-    background-color: #74c7ee;
+    background-color: #00aeff;
 }
 
 article img {
@@ -61,36 +61,6 @@ p.pronounciation {
 }
 
 footer {
-    background-color: #153991;
+    background-color: #002395;
     color: #ffffff
 }
-
-/* The below CSS for the side-by-side images on the geography page was obtained from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
-.column-image {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-  }
-
-.row-image::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  @media screen and (max-width: 580px) {
-    .column-image {
-      width: 100%;
-    }
-  }
-
-  img {
-    transition: 0.25s;
-  }
-
-  img:hover {
-    transition: 0.25s;
-    /* makes image grow larger when hovered over, got information from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
-    transform: scale(1.015);
-    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.4);
-  }

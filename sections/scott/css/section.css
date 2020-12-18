@@ -83,14 +83,3 @@ footer {
       width: 100%;
     }
   }
-
-  img {
-    transition: 0.25s;
-  }
-
-  img:hover {
-    transition: 0.25s;
-    /* makes image grow larger when hovered over, got information from https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
-    transform: scale(1.015);
-    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.4);
-  }
