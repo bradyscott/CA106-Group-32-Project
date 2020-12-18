@@ -23,6 +23,10 @@ body {
     margin-right: auto;
 }
 
+p {
+    font-weight: normal;
+}
+
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
@@ -241,12 +245,6 @@ hr {
     margin-bottom: 60px;
 }
 
-/* This is used on the language page so that the HR lines up with the list numbers. */
-
-hr.list {
-    margin-left: -20px;
-}
-
 table {
     width: 100%;
     margin-left: auto;
@@ -428,4 +426,8 @@ footer a:hover {
     transition: 0.5s;
     background-color: white;
     border: 2px solid red;
+}
+
+.mistakes {
+    font-weight: bold;
 }
